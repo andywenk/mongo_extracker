@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'sqlite3'
 gem "mongoid", "~> 3.0.0"
+gem "pry"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -11,4 +12,5 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
