@@ -1,0 +1,11 @@
+<p>MongoDB based exception tracker</p>
+
+<p>
+  <%= flash[:notice] if flash && flash[:notice].present? %>
+</p>
+
+<p>
+  <%= link_to 'neue Exception', new_tracker_path %>
+  <br>
+  <%= link_to 'Exceptions anzeigen', show_tracker_path %>
+
