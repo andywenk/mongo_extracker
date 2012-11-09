@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Occurence</th>
+    <th>Message</th>
+    <th>Created at</th>
+  <tr>
+  <% @documents.each do | document | %>
+  <tr>
+    <td><%= document['name'] %></td>
+    <td><%= document['occurence'] %></td>
+    <td><%= document['message'] %></td>
+    <td><%= document['created_at'] %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+

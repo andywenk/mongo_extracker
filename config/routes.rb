@@ -1,7 +1,10 @@
 MongoExtracker::Application.routes.draw do
 
-  resource :tracker
-
+  resource :tracker do
+    member do
+      get 'category/:id' => 'trackers#category', as: 'category'
+    end
+  end
   root :to => 'trackers#index'
 
 

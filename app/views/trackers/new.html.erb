@@ -1,7 +1,21 @@
 <%= form_tag tracker_path, method: 'post' %>
+
 <%= label_tag 'Name: ' %>
 <%= text_field_tag :name %>
 <br>
-<%= submit_tag 'senden' %>
+<%= label_tag 'Occurence: ' %>
+<%= text_field_tag :occurence %>
+<br>
+<%= label_tag 'Created At: ' %>
+<%= text_field_tag :created_at %>
+<br>
+<%= label_tag 'Message: ' %>
+<%= text_area_tag :message %>
+<br>
 
+<%= label_tag '' %>
+<%= submit_tag 'send' %>
 
+<p>
+  <%= link_to '<< back', root_path %>
+</p>

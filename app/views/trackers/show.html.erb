@@ -1,6 +1,13 @@
-<h2>getrackte Exceptions</h2>
+<h2>tracked Exceptions (<%= @documents.count %>)</h2>
 
-<% @documents.each do |doc| %>
-<%= doc.name %>
-<br>
+<p>
+  <%= flash[:notice] if flash && flash[:notice].present? %>
+</p>
+
+<% @categories.sort.each do |category, count| %>
+  <h3><%= link_to category + " (#{count})", category_tracker_path(category), remote: true %></h3>
 <% end %>
+<span id="category"></span>
+<p>
+  <%= link_to '<< home', root_path %>
+</p>
